@@ -26,14 +26,14 @@ app.use(express.static(publicDriectoryPath))
 app.get('', (req, res) => {
     res.render('index',{
         title: 'Weather',
-        name: 'Andrew Mead'
+        name: 'Ali Sheikh'
     })
 })
 
 app.get('/about', (req,res) =>{
     res.render('about',{
         title:'About me',
-        name: 'Andrew Mead'
+        name: 'Ali Sheikh'
 
     })
 })
@@ -42,7 +42,7 @@ app.get('/help', (req,res) =>{
     res.render('help', {
         title: 'Help',
         message: 'This is the help file being served dynamically ',
-        name: 'Andrew Mead'
+        name: 'Ali Sheikh'
     })
 })
 
@@ -91,7 +91,7 @@ app.get('/help/*', (req,res) =>{
     res.render('404-page', {
         title: '404',
         error: 'Help article note found',
-        name: 'Andrew Mead'
+        name: 'Ali Sheikh'
     })
 })
 
@@ -99,7 +99,7 @@ app.get('*', (req,res) =>{
     res.render('404-page', {
         title: '404',
         error: 'Page not found.',
-        name: 'Andrew Mead'
+        name: 'Ali Sheikh'
     })
 })
 
